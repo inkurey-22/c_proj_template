@@ -100,10 +100,12 @@ $(OBJ_DIR)/%.o: %.c
 	@$(CC) -c $< -o $@ $(CFLAGS)
 
 clean:
+	@echo -e "$(GREEN)[LIBRARY]: $(YELLOW)Clean$(NC)"
 	@rm -rf $(OBJ_DIR)
 
 fclean: clean
 	@rm -f $(NAME)
+	@echo -e "$(GREEN)[LIBRARY]: $(YELLOW)Full clean$(NC)"
 
 re: fclean all
 
