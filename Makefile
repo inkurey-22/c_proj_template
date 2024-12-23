@@ -47,15 +47,15 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@$(CC) -c $< -o $@ $(CFLAGS)
 
 clean:
-	@echo -e "$(GREEN)[PROGRAM]: $(YELLOW)Clean$(NC)"
+	@echo -e "$(GREEN)[PROGRAM]: $(BLUE)Clean$(NC)"
 	@$(MAKE) -C $(LIB_DIR) clean
 	@rm -rf $(OBJ_DIR)
 
 fclean: clean
 	@rm -f $(LIB)
-	@echo -e "$(GREEN)[LIBRARY]: $(YELLOW)Full clean$(NC)"
+	@echo -e "$(YELLOW)[LIBRARY]: $(BLUE)Full clean$(NC)"
 	@rm -f $(NAME)
-	@echo -e "$(GREEN)[PROGRAM]: $(YELLOW)Full clean$(NC)"
+	@echo -e "$(GREEN)[PROGRAM]: $(BLUE)Full clean$(NC)"
 
 re: fclean all
 

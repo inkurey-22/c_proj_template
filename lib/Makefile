@@ -93,19 +93,19 @@ $(NAME): $(OBJ)
 	@cp my_printf/my_printf.h ../include
 	@cp strings/my_strings.h ../include
 	@cp numbers/my_numbers.h ../include
-	@echo -e "$(GREEN)[LIBRARY]: $(BLUE)$(NAME) compiled$(NC)"
+	@echo -e "$(YELLOW)[LIBRARY]: $(BLUE)$(NAME) compiled$(NC)"
 
 $(OBJ_DIR)/%.o: %.c
 	@mkdir -p $(@D)
 	@$(CC) -c $< -o $@ $(CFLAGS)
 
 clean:
-	@echo -e "$(GREEN)[LIBRARY]: $(YELLOW)Clean$(NC)"
+	@echo -e "$(YELLOW)[LIBRARY]: $(BLUE)Clean$(NC)"
 	@rm -rf $(OBJ_DIR)
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo -e "$(GREEN)[LIBRARY]: $(YELLOW)Full clean$(NC)"
+	@echo -e "$(YELLOW)[LIBRARY]: $(BLUE)Full clean$(NC)"
 
 re: fclean all
 
