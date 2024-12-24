@@ -8,7 +8,7 @@
 #ifndef MY_PRINTF_H_
     #define MY_PRINTF_H_
 
-#include <stdarg.h>
+    #include <stdarg.h>
 
 // Buffer structure
 typedef struct buffer_s {
@@ -63,21 +63,21 @@ void printf_tab(char **, buffer_t *);
 void parse_format(char const *, int *, format_t *, va_list);
 
 // Linkers
-void print_char(va_list, buffer_t *, format_t *);
-void print_string(va_list, buffer_t *, format_t *);
-void print_int(va_list, buffer_t *, format_t *);
-void print_mudulo(va_list, buffer_t *, format_t *);
-void print_float(va_list, buffer_t *, format_t *);
-void print_puthexmin(va_list, buffer_t *, format_t *);
-void print_puthexmaj(va_list, buffer_t *, format_t *);
-void print_octal(va_list, buffer_t *, format_t *);
-void print_pointer(va_list, buffer_t *, format_t *);
-void print_nspec(va_list, buffer_t *, format_t *);
-void print_capscientific(va_list, buffer_t *, format_t *);
-void print_scientific(va_list, buffer_t *, format_t *);
-void print_g_low(va_list, buffer_t *, format_t *);
-void print_g_up(va_list, buffer_t *, format_t *);
-void print_decimal(va_list, buffer_t *, format_t *);
-void print_tab(va_list, buffer_t *, format_t *);
+void print_char(va_list args, buffer_t *, format_t *);
+void print_string(va_list args, buffer_t *, format_t *);
+void print_int(va_list args, buffer_t *, format_t *);
+void print_mudulo(va_list args, buffer_t *, format_t *);
+void print_float(va_list args, buffer_t *, format_t *);
+void print_puthexmin(va_list args, buffer_t *, format_t *);
+void print_puthexmaj(va_list args, buffer_t *, format_t *);
+void print_octal(va_list args, buffer_t *, format_t *);
+void print_pointer(va_list args, buffer_t *, format_t *);
+void print_nspec(va_list args, buffer_t *, format_t *);
+void print_capscientific(va_list args, buffer_t *, format_t *);
+void print_scientific(va_list args, buffer_t *, format_t *);
+void print_g_low(va_list args, buffer_t *, format_t *);
+void print_g_up(va_list args, buffer_t *, format_t *);
+void print_decimal(va_list args, buffer_t *, format_t *);
+void print_tab(va_list args, buffer_t *, format_t *);
 
 #endif /* !MY_PRINTF_H_ */

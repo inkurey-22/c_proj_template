@@ -6,7 +6,7 @@
 */
 
 #ifndef MY_NUMBERS_H_
-#define MY_NUMBERS_H_
+    #define MY_NUMBERS_H_
 
 int my_getnbr(char const *);
 int my_compute_power_rec(int, int);

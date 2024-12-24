@@ -6,7 +6,7 @@
 */
 
 #ifndef MY_IO_H_
-#define MY_IO_H_
+    #define MY_IO_H_
 
 void my_putchar(char);
 void my_putstr(char const *);
