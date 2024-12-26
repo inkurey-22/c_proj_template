@@ -67,6 +67,14 @@ SRC 	=   io/my_putnbr.c                   \
             strings/my_strchr.c              \
             strings/my_revstr.c              \
             strings/split_string.c           \
+			lists/add_to_top.c               \
+			lists/append.c                   \
+			lists/create.c				  	 \
+			lists/find.c					 \
+			lists/free_list.c				 \
+			lists/remove.c					 \
+			lists/size.c					 \
+			lists/sort.c
 
 INCLUDES=   io/my_io.h	      \
             my_printf/my_printf.h   \
