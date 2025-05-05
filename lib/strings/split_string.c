@@ -7,10 +7,16 @@
 
 #include <stdlib.h>
 #include <stddef.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <unistd.h>
+
 #include "my_strings.h"
 
 static int isdelim(char c, char const *delim)
 {
+    if (c == '\0')
+        return 1;
     for (int i = 0; delim[i] != '\0'; i++)
         if (c == delim[i])
             return 1;
@@ -37,6 +43,17 @@ static int count_words(char const *str, char const *delim)
     return wcount;
 }
 
+void
+skip(char const *str, int *i, char const *delim, bool skip_delim)
+{
+    if (skip_delim)
+        while (isdelim(str[*i], delim))
+            (*i) += 1;
+    else
+        while (!isdelim(str[*i], delim))
+            (*i) += 1;
+}
+
 char **split_string(char const *str, char const *delim)
 {
     int wcount = count_words(str, delim);
@@ -44,12 +61,12 @@ char **split_string(char const *str, char const *delim)
     int i = 0;
     int start = 0;
 
+    if (tab == NULL)
+        return NULL;
     for (int j = 0; j < wcount; j++){
-        while (isdelim(str[i], delim))
-            i++;
+        skip(str, &i, delim, true);
         start = i;
-        while (!isdelim(str[i], delim))
-            i++;
+        skip(str, &i, delim, false);
         tab[j] = malloc(i - start + 1);
         if (tab[j]) {
             my_strncpy(tab[j], str + start, i - start);

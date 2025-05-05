@@ -5,17 +5,12 @@
 ** my_putstr
 */
 
-#include <stddef.h>
 #include "my_printf.h"
-#include "my_strings.h"
 
-void printf_putstr(char const *str, buffer_t *buff, format_t *flags)
+void printf_putstr(int fd, char const *str, buffer_t *buff)
 {
-    for (int i = 0; i < flags->width - my_strlen(str); i++)
-        printf_putchar(' ', buff);
     if (str == NULL)
         return;
-    for (int i = 0; str[i] != '\0'; i++) {
-        printf_putchar(str[i], buff);
-    }
+    for (int i = 0; str[i] != '\0'; i++)
+        printf_putchar(fd, str[i], buff);
 }

@@ -28,8 +28,8 @@ typedef struct list_s {
 
 list_t *create_node(void *);
 list_t *reverse_list(list_t *);
-list_t *find_node(list_t *, void const *,
-    int (*cmp)(void const *, void const *));
+list_t *find_node(list_t *, void *,
+    int (*cmp)(void *, void *));
 
 int list_size(list_t *);
 

@@ -5,18 +5,14 @@
 ** putchar
 */
 
-#include <unistd.h>
-#include <stddef.h>
 #include "my_printf.h"
 
-void printf_putchar(char c, buffer_t *buff)
+void printf_putchar(int fd, char c, buffer_t *buff)
 {
-    if (buff == NULL) {
-        write(1, &c, 1);
-        return;
-    }
     if (buff->pos >= 1024) {
-        write(1, buff->buffer, buff->pos);
+        if (fd == -1)
+            return;
+        write(fd, buff->buffer, buff->pos);
         buff->pos = 0;
     }
     buff->buffer[buff->pos] = c;

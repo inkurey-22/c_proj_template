@@ -38,7 +38,7 @@ list_t *sorted_merge(list_t *a, list_t *b,
 **  How it works: slow pointer moves one step at a time,
 **  fast pointer moves two steps at a time
 */
-void split(list_t *src, list_t **front, list_t **back)
+void split_list(list_t *src, list_t **front, list_t **back)
 {
     list_t *slow = src;
     list_t *fast = src->next;
@@ -69,7 +69,7 @@ void merge_sort(list_t **list,
 
     if (head == NULL || head->next == NULL)
         return;
-    split(head, &a, &b);
+    split_list(head, &a, &b);
     merge_sort(&a, cmp);
     merge_sort(&b, cmp);
     *list = sorted_merge(a, b, cmp);

@@ -5,6 +5,7 @@
 ** create node
 */
 
+#include <unistd.h>
 
 #include "lists.h"
 
@@ -15,8 +16,9 @@ list_t *create_node(void *data)
 {
     list_t *node = malloc(sizeof(list_t));
 
-    if (node == NULL) {
-        fprintf(stderr, "Error: node memory allocation failed\n");
+    if (!node) {
+        write(2, "Error: node memory allocation failed\n", 37);
+        return NULL;
     }
     node->data = data;
     node->next = NULL;

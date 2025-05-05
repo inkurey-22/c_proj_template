@@ -54,7 +54,10 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# IDE files
+# Editors files
 *.swp
+*~
+\#*\#
+.\#*
 .vscode/
 .idea/

@@ -7,29 +7,22 @@
 
 #include "my_printf.h"
 
-void print_char(va_list args, buffer_t *buff,
-    __attribute__((unused))format_t *flags)
+void print_char(int fd, va_list args, buffer_t *buff)
 {
-    printf_putchar(va_arg(args, int), buff);
+    printf_putchar(fd, va_arg(args, int), buff);
 }
 
-void print_string(va_list args, buffer_t *buff, format_t *flags)
+void print_string(int fd, va_list args, buffer_t *buff)
 {
-    printf_putstr(va_arg(args, char *), buff, flags);
+    printf_putstr(fd, va_arg(args, char *), buff);
 }
 
-void print_int(va_list args, buffer_t *buff, format_t *flags)
+void print_int(int fd, va_list args, buffer_t *buff)
 {
-    printf_putnbr(va_arg(args, int), buff, flags);
+    printf_putnbr(fd, va_arg(args, int), buff);
 }
 
-void print_mudulo(__attribute__((unused))va_list args, buffer_t *buff,
-    __attribute__((unused))format_t *flags)
+void print_mudulo(int fd, __attribute__((unused))va_list args, buffer_t *buff)
 {
-    printf_putchar('%', buff);
-}
-
-void print_float(va_list args, buffer_t *buff, format_t *flags)
-{
-    printf_putfloat(va_arg(args, double), buff, flags);
+    printf_putchar(fd, '%', buff);
 }
