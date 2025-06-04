@@ -8,7 +8,8 @@
 #include "my_io.h"
 #include "my_numbers.h"
 
-int my_isneg(int n)
+int
+my_isneg(int n)
 {
     if (n < 0)
         my_putchar('N');

@@ -8,7 +8,8 @@
 #include <stddef.h>
 #include "my_strings.h"
 
-char *my_strcpy(char *dest, char const *src)
+char *
+my_strcpy(char *dest, char const *src)
 {
     int i = 0;
 
@@ -20,7 +21,8 @@ char *my_strcpy(char *dest, char const *src)
     return dest;
 }
 
-char *my_strncpy(char *dest, char const *src, int n)
+char *
+my_strncpy(char *dest, char const *src, int n)
 {
     int i = 0;
 

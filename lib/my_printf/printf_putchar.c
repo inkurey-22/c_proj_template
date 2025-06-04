@@ -7,7 +7,8 @@
 
 #include "my_printf.h"
 
-void printf_putchar(int fd, char c, buffer_t *buff)
+void
+printf_putchar(int fd, char c, buffer_t *buff)
 {
     if (buff->pos >= 1024) {
         if (fd == -1)

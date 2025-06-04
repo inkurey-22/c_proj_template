@@ -13,7 +13,8 @@
 
 #include "my_strings.h"
 
-static int isdelim(char c, char const *delim)
+static int
+isdelim(char c, char const *delim)
 {
     if (c == '\0')
         return 1;
@@ -23,7 +24,8 @@ static int isdelim(char c, char const *delim)
     return 0;
 }
 
-static int count_words(char const *str, char const *delim)
+static int
+count_words(char const *str, char const *delim)
 {
     int wcount = 0;
     int i = 0;
@@ -44,7 +46,7 @@ static int count_words(char const *str, char const *delim)
 }
 
 void
-skip(char const *str, int *i, char const *delim, bool skip_delim)
+skip_char(char const *str, int *i, char const *delim, bool skip_delim)
 {
     if (skip_delim)
         while (isdelim(str[*i], delim))
@@ -54,7 +56,8 @@ skip(char const *str, int *i, char const *delim, bool skip_delim)
             (*i) += 1;
 }
 
-char **split_string(char const *str, char const *delim)
+char **
+split_string(char const *str, char const *delim)
 {
     int wcount = count_words(str, delim);
     char **tab = malloc(sizeof(char *) * (wcount + 1));

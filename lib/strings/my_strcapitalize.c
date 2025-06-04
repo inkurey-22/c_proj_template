@@ -8,35 +8,40 @@
 #include <stddef.h>
 #include "my_strings.h"
 
-static int my_isalpha(char c)
+static int
+my_isalpha(char c)
 {
     if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
         return 1;
     return 0;
 }
 
-int my_isalnum(char c)
+int
+my_isalnum(char c)
 {
     if (my_isalpha(c) || (c >= '0' && c <= '9'))
         return 1;
     return 0;
 }
 
-static char to_upper(char c)
+static char
+to_upper(char c)
 {
     if (c >= 'a' && c <= 'z')
         c -= 32;
     return c;
 }
 
-static char to_lower(char c)
+static char
+to_lower(char c)
 {
     if (c >= 'A' && c <= 'Z')
         c += 32;
     return c;
 }
 
-char *my_strcapitalize(char *str)
+char *
+my_strcapitalize(char *str)
 {
     int new_word = 1;
 

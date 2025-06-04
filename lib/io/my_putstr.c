@@ -10,7 +10,8 @@
 #include "my_io.h"
 #include "my_strings.h"
 
-void my_putstr(char const *str)
+void
+my_putstr(char const *str)
 {
     if (str == NULL)
         return;

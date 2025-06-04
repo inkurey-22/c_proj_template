@@ -8,7 +8,8 @@
 #include <limits.h>
 #include "my_numbers.h"
 
-int my_find_prime_sup(int n)
+int
+my_find_prime_sup(int n)
 {
     for (int i = n; i < INT_MAX; i++)
         if (my_is_prime(i))

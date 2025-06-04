@@ -10,7 +10,8 @@
 /*
 ** Appends a node to the end of the list
 */
-void append_node(list_t **list, void *data)
+void
+append_node(list_t **list, void *data)
 {
     list_t *node = create_node(data);
     list_t *tmp = *list;

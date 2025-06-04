@@ -8,7 +8,8 @@
 #include <stddef.h>
 #include "my_strings.h"
 
-static int compare(char const *str, char const *to_find)
+static int
+compare(char const *str, char const *to_find)
 {
     for (int i = 0; to_find[i] != '\0'; i++)
         if (str[i] != to_find[i])
@@ -16,7 +17,8 @@ static int compare(char const *str, char const *to_find)
     return 1;
 }
 
-char *my_strstr(char *str, char const *to_find)
+char *
+my_strstr(char *str, char const *to_find)
 {
     if (str == NULL)
         return NULL;

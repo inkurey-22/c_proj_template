@@ -7,14 +7,16 @@
 
 #include "my_strings.h"
 
-static int my_isalpha(char c)
+static int
+my_isalpha(char c)
 {
     if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
         return 1;
     return 0;
 }
 
-int my_str_isalpha(char const *str)
+int
+my_str_isalpha(char const *str)
 {
     for (int i = 0; str[i] != '\0'; i++)
         if (!my_isalpha(str[i]))

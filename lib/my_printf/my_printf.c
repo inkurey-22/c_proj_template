@@ -18,7 +18,8 @@ static const printf_t SPECIFIERS[] = {
     {0, NULL}
 };
 
-static void manage_specifiers(int fd, char c, va_list args, buffer_t *buff)
+static void
+manage_specifiers(int fd, char c, va_list args, buffer_t *buff)
 {
     for (int i = 0; SPECIFIERS[i].c != '\0'; i++) {
         if (c == SPECIFIERS[i].c) {
@@ -30,7 +31,8 @@ static void manage_specifiers(int fd, char c, va_list args, buffer_t *buff)
     printf_putchar(fd, c, buff);
 }
 
-void put_buffer(int fd, buffer_t *buff)
+void
+put_buffer(int fd, buffer_t *buff)
 {
     if (buff->pos > 0) {
         write(fd, buff->buffer, buff->pos);
@@ -38,7 +40,8 @@ void put_buffer(int fd, buffer_t *buff)
     }
 }
 
-int my_printf(char const *format, ...)
+int
+my_printf(char const *format, ...)
 {
     va_list args;
     buffer_t buff = {{0}, 0, 0};
@@ -57,7 +60,8 @@ int my_printf(char const *format, ...)
     return buff.len;
 }
 
-int my_dprintf(int fd, const char *format, ...)
+int
+my_dprintf(int fd, const char *format, ...)
 {
     va_list args;
     buffer_t buff = {{0}, 0, 0};
@@ -76,7 +80,8 @@ int my_dprintf(int fd, const char *format, ...)
     return buff.len;
 }
 
-int my_asprintf(char **str, const char *format, ...)
+int
+my_asprintf(char **str, const char *format, ...)
 {
     va_list args;
     buffer_t buff = {{0}, 0, 0};

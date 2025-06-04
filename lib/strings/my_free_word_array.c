@@ -7,7 +7,8 @@
 #include <stdlib.h>
 #include "my_strings.h"
 
-void my_free_word_array(char **array)
+void
+my_free_word_array(char **array)
 {
     if (!array)
         return;

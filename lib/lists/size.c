@@ -10,7 +10,8 @@
 /*
 **  Returns the size of the list
 */
-int list_size(list_t *list)
+int
+list_size(list_t *list)
 {
     int size = 0;
 

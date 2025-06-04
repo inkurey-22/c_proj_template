@@ -8,14 +8,16 @@
 #include <stddef.h>
 #include "my_strings.h"
 
-static int my_tolower(char c)
+static int
+my_tolower(char c)
 {
     if (c >= 'A' && c <= 'Z')
         return c + 32;
     return c;
 }
 
-int my_strcmp(char const *s1, char const *s2)
+int
+my_strcmp(char const *s1, char const *s2)
 {
     if (s1 == NULL && s2 == NULL)
         return 0;
@@ -32,7 +34,8 @@ int my_strcmp(char const *s1, char const *s2)
     return 0;
 }
 
-int my_strcasecmp(char const *s1, char const *s2)
+int
+my_strcasecmp(char const *s1, char const *s2)
 {
     if (s1 == NULL && s2 == NULL)
         return 0;

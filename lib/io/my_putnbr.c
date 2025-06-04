@@ -8,7 +8,8 @@
 #include <limits.h>
 #include "my_io.h"
 
-int my_putnbr(int n)
+int
+my_putnbr(int n)
 {
     if (n == INT_MIN) {
         my_putchar('-');

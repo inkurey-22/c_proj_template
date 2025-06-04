@@ -18,7 +18,8 @@
 ** Removes the node with the given data
 ** using the function pointer passed as parameter
 */
-void remove_node(list_t **list, void const *data, void (*free_data)(void *),
+void
+remove_node(list_t **list, void const *data, void (*free_data)(void *),
     int (*cmp)(void const *data, void const *ref))
 {
     list_t *tmp = *list;

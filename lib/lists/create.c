@@ -12,7 +12,8 @@
 /*
 **  Creates a new node with the given data
 */
-list_t *create_node(void *data)
+list_t *
+create_node(void *data)
 {
     list_t *node = malloc(sizeof(list_t));
 

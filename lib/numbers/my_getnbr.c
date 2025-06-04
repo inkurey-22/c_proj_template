@@ -8,7 +8,8 @@
 #include <limits.h>
 #include "my_numbers.h"
 
-int my_getnbr(char const *str)
+int
+my_getnbr(char const *str)
 {
     long result = 0;
     int digit = 0;

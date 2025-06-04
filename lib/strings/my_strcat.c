@@ -7,7 +7,8 @@
 
 #include "my_strings.h"
 
-char *my_strcat(char *dest, char const *src)
+char *
+my_strcat(char *dest, char const *src)
 {
     int dest_len = my_strlen(dest);
     int i = 0;
@@ -18,7 +19,8 @@ char *my_strcat(char *dest, char const *src)
     return dest;
 }
 
-char *my_strncat(char *dest, char const *src, int n)
+char *
+my_strncat(char *dest, char const *src, int n)
 {
     int dest_len = my_strlen(dest);
     int i = 0;

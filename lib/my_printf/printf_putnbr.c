@@ -7,7 +7,8 @@
 
 #include "my_printf.h"
 
-int printf_putnbr(int fd, int n, buffer_t *buff)
+int
+printf_putnbr(int fd, int n, buffer_t *buff)
 {
     if (n == INT_MIN) {
         printf_putchar(fd, '-', buff);

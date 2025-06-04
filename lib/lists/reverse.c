@@ -10,7 +10,8 @@
 /*
 **  Reverses the order of the list
 */
-list_t *reverse_list(list_t *list)
+list_t *
+reverse_list(list_t *list)
 {
     list_t *prev = NULL;
     list_t *next = NULL;

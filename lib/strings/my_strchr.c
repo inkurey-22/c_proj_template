@@ -9,7 +9,8 @@
 
 #include <stddef.h>
 
-char *my_strchr(char *str, char c)
+char *
+my_strchr(char *str, char c)
 {
     int i = 0;
 
@@ -23,7 +24,8 @@ char *my_strchr(char *str, char c)
     return NULL;
 }
 
-char *my_strrchr(char *str, char c)
+char *
+my_strrchr(char *str, char c)
 {
     int i = my_strlen(str);
 
@@ -37,7 +39,8 @@ char *my_strrchr(char *str, char c)
     return NULL;
 }
 
-char *my_strnchr(char *str, char c, int n)
+char *
+my_strnchr(char *str, char c, int n)
 {
     int i = 0;
     int count = 0;

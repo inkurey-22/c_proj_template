@@ -7,7 +7,8 @@
 
 #include "my_numbers.h"
 
-int my_is_prime(int nb)
+int
+my_is_prime(int nb)
 {
     if (nb <= 1)
         return 0;

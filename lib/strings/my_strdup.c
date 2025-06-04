@@ -9,7 +9,8 @@
 #include <stddef.h>
 #include "my_strings.h"
 
-char *my_strndup(char const *src, int n)
+char *
+my_strndup(char const *src, int n)
 {
     char *new = NULL;
     int len = my_strlen(src);
@@ -25,7 +26,8 @@ char *my_strndup(char const *src, int n)
     return new;
 }
 
-char *my_strdup(char const *src)
+char *
+my_strdup(char const *src)
 {
     int len = 0;
     char *new = NULL;

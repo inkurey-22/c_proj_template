@@ -8,7 +8,8 @@
 #include <limits.h>
 #include "my_numbers.h"
 
-static int will_overflow_power(int nb, int result)
+static int
+will_overflow_power(int nb, int result)
 {
     if (result == 0)
         return 0;
@@ -23,7 +24,8 @@ static int will_overflow_power(int nb, int result)
     return 0;
 }
 
-int my_compute_power_rec(int nb, int p)
+int
+my_compute_power_rec(int nb, int p)
 {
     int result = 1;
 

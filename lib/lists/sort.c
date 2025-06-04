@@ -14,7 +14,8 @@
 ** and call the function again with the next element of the list
 ** that had the smallest element
 */
-list_t *sorted_merge(list_t *a, list_t *b,
+list_t *
+sorted_merge(list_t *a, list_t *b,
     int (*cmp)(void const *data1, void const *data2))
 {
     list_t *result = NULL;
@@ -38,7 +39,8 @@ list_t *sorted_merge(list_t *a, list_t *b,
 **  How it works: slow pointer moves one step at a time,
 **  fast pointer moves two steps at a time
 */
-void split_list(list_t *src, list_t **front, list_t **back)
+void
+split_list(list_t *src, list_t **front, list_t **back)
 {
     list_t *slow = src;
     list_t *fast = src->next;
@@ -60,8 +62,8 @@ void split_list(list_t *src, list_t **front, list_t **back)
 ** How it works: split the list in two parts,
 ** sort each part and merge them back together
 */
-void merge_sort(list_t **list,
-    int (*cmp)(void const *data1, void const *data2))
+void
+merge_sort(list_t **list, int (*cmp)(void const *data1, void const *data2))
 {
     list_t *head = *list;
     list_t *a;

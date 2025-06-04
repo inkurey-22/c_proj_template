@@ -7,14 +7,16 @@
 
 #include "my_strings.h"
 
-static int my_isupper(char c)
+static int
+my_isupper(char c)
 {
     if (c >= 'A' && c <= 'A')
         return 1;
     return 0;
 }
 
-int my_str_isupper(char const *str)
+int
+my_str_isupper(char const *str)
 {
     for (int i = 0; str[i] != '\0'; i++)
         if (!my_isupper(str[i]))

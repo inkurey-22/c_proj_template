@@ -7,7 +7,8 @@
 
 #include "my_printf.h"
 
-void printf_putstr(int fd, char const *str, buffer_t *buff)
+void
+printf_putstr(int fd, char const *str, buffer_t *buff)
 {
     if (str == NULL)
         return;

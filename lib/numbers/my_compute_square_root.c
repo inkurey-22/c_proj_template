@@ -7,7 +7,8 @@
 
 #include "my_numbers.h"
 
-int my_compute_square_root(int nb)
+int
+my_compute_square_root(int nb)
 {
     int result = 1;
 
