@@ -5,7 +5,9 @@
 ** add to top
 */
 
-#include "lists.h"
+#include <stdlib.h>
+
+#include "my_lists.h"
 
 /*
 ** Adds a node to the top of the list

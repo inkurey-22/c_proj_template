@@ -5,7 +5,7 @@
 ** size
 */
 
-#include "lists.h"
+#include "my_lists.h"
 
 /*
 **  Returns the size of the list

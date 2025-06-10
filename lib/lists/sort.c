@@ -5,7 +5,7 @@
 ** sort
 */
 
-#include "lists.h"
+#include "my_lists.h"
 
 /*
 ** Merge two sorted lists

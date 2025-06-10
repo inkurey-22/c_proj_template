@@ -78,11 +78,13 @@ OBJ     =   $(SRC:%.c=$(OBJ_DIR)/%.o)
 
 CFLAGS  =   -I../include -Wall -Wextra
 
+TOTAL := $(words $(SRC))
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	@$(AR) $(NAME) $(OBJ)
-	@echo "ar rc $(NAME) $(OBJ_DIR)/*.o"
+	@printf "$(BOLD)$(BLUE)[100%%]$(NC)$(GREEN)$(BOLD)Linking C static library$(NC)$(YELLOW)$(BOLD)%s$(NC)\n" "$(NAME)"
 	@cp io/my_io.h ../include
 	@cp my_printf/my_printf.h ../include
 	@cp strings/my_strings.h ../include
@@ -90,7 +92,11 @@ $(NAME): $(OBJ)
 
 $(OBJ_DIR)/%.o: %.c
 	@mkdir -p $(@D)
-	$(CC) -c $< -o $@ $(CFLAGS)
+	@COMPILED=$$(find $(OBJ_DIR) -name '*.o' | wc -l); \
+	TOTAL=$(TOTAL); \
+	PERCENT=$$(( (COMPILED + 1) * 100 / TOTAL )); \
+	printf "$(BOLD)$(BLUE)[%3s%%]$(NC)$(GREEN)Building C object$(NC)$(YELLOW)%s$(NC)\n" "$$PERCENT" "$@"
+	@$(CC) -c $< -o $@ $(CFLAGS)
 
 clean:
 	rm -rf $(OBJ_DIR)

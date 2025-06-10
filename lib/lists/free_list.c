@@ -5,7 +5,8 @@
 ** free list
 */
 
-#include "lists.h"
+#include <stdlib.h>
+#include "my_lists.h"
 
 /*
 ** Frees the list and its data using the function pointer passed as parameter

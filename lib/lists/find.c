@@ -5,7 +5,7 @@
 ** find node
 */
 
-#include "lists.h"
+#include "my_lists.h"
 
 /*
 **  Finds a node in the list with the given reference

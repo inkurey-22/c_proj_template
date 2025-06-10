@@ -5,7 +5,9 @@
 ** remove node
 */
 
-#include "lists.h"
+#include <stdlib.h>
+
+#include "my_lists.h"
 
 /*
 ** void (*free_data)(void *data) is a function pointer

@@ -5,7 +5,7 @@
 ** append
 */
 
-#include "lists.h"
+#include "my_lists.h"
 
 /*
 ** Appends a node to the end of the list

@@ -5,7 +5,7 @@
 ** reverse list
 */
 
-#include "lists.h"
+#include "my_lists.h"
 
 /*
 **  Reverses the order of the list

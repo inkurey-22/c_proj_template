@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdbool.h>
-#include <stdio.h>
 #include <unistd.h>
 
 #include "my_strings.h"
@@ -67,9 +66,9 @@ split_string(char const *str, char const *delim)
     if (tab == NULL)
         return NULL;
     for (int j = 0; j < wcount; j++){
-        skip(str, &i, delim, true);
+        skip_char(str, &i, delim, true);
         start = i;
-        skip(str, &i, delim, false);
+        skip_char(str, &i, delim, false);
         tab[j] = malloc(i - start + 1);
         if (tab[j]) {
             my_strncpy(tab[j], str + start, i - start);

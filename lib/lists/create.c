@@ -6,8 +6,9 @@
 */
 
 #include <unistd.h>
+#include <stdlib.h>
 
-#include "lists.h"
+#include "my_lists.h"
 
 /*
 **  Creates a new node with the given data
