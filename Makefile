@@ -93,7 +93,8 @@ PROGRESS_FILE = .progress
 TOTAL_STEPS = $(shell echo "$$(($(words $(LIB_OBJ)) + $(words $(OBJ)) + 3))")
 
 define update_progress
-    @echo $$(( $$(cat $(PROGRESS_FILE) 2>/dev/null || echo 0) + 1 )) > $(PROGRESS_FILE)
+	@echo $$(( $$(cat $(PROGRESS_FILE) 2>/dev/null || \
+		echo 0) + 1 )) > $(PROGRESS_FILE)
 endef
 
 define show_progress
@@ -107,7 +108,8 @@ all: $(NAME)
 $(NAME): $(LIB) $(OBJ)
 	$(update_progress)
 	$(show_progress)
-	@printf "$(GREEN)$(BOLD)Linking C executable$(NC)$(YELLOW)$(BOLD)%s$(NC)\n" "$(NAME)"
+	@printf "$(GREEN)$(BOLD)Linking C executable$(NC)"
+	@printf "$(YELLOW)$(BOLD)%s$(NC)\n" "$(NAME)"
 	@$(CC) -o $(NAME) $(OBJ) $(CFLAGS) $(LDFLAGS)
 	$(update_progress)
 	$(show_progress)
@@ -118,7 +120,8 @@ $(LIB): $(LIB_OBJ)
 	$(update_progress)
 	$(show_progress)
 	@$(AR) $(LIB) $(LIB_OBJ)
-	@printf "$(GREEN)$(BOLD)Linking C static library$(NC)$(YELLOW)$(BOLD)%s$(NC)\n" "$(LIB)"
+	@printf "$(GREEN)$(BOLD)Linking C static library$(NC)"
+	@printf "$(YELLOW)$(BOLD)%s$(NC)\n" "$(LIB)"
 
 $(LIB_OBJ_DIR)/%.o: $(LIB_DIR)/%.c
 	@mkdir -p $(@D)
