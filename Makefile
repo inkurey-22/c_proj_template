@@ -99,8 +99,15 @@ endef
 
 define show_progress
 	@CURRENT_STEP=$$(cat $(PROGRESS_FILE)); \
+	BAR_WIDTH=22; \
+	FILLED=$$(( CURRENT_STEP * BAR_WIDTH / $(TOTAL_STEPS) )); \
+	EMPTY=$$(( BAR_WIDTH - FILLED )); \
+	printf "$(BOLD)$(BLUE)["; \
+	for i in $$(seq 1 $$FILLED); do printf "="; done; \
+	for i in $$(seq 1 $$EMPTY); do printf " "; done; \
+	printf "]$(NC)"; \
 	PERCENT=$$(( CURRENT_STEP * 100 / $(TOTAL_STEPS) )); \
-	printf "$(BOLD)$(BLUE)[%3s%%]$(NC) " "$$PERCENT"
+	printf "%3s%% " "$$PERCENT"
 endef
 
 all: $(NAME)
