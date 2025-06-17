@@ -3,599 +3,14 @@
     "arguments": [
       "/usr/bin/gcc",
       "-c",
-      "-I../include",
+      "-Iinclude",
       "-Wall",
       "-Wextra",
       "-o",
-      "obj/numbers/my_is_prime.o",
-      "numbers/my_is_prime.c"
+      "lib/obj/io/my_putnbr.o",
+      "lib/io/my_putnbr.c"
     ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/numbers/my_is_prime.c",
-    "output": "/home/curry/base_repo/lib/obj/numbers/my_is_prime.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_strchr.o",
-      "strings/my_strchr.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strchr.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strchr.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/my_printf/printf_putchar.o",
-      "my_printf/printf_putchar.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/my_printf/printf_putchar.c",
-    "output": "/home/curry/base_repo/lib/obj/my_printf/printf_putchar.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/my_printf/printf_putnbr.o",
-      "my_printf/printf_putnbr.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/my_printf/printf_putnbr.c",
-    "output": "/home/curry/base_repo/lib/obj/my_printf/printf_putnbr.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/io/my_putchar.o",
-      "io/my_putchar.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/io/my_putchar.c",
-    "output": "/home/curry/base_repo/lib/obj/io/my_putchar.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/my_printf/my_printf.o",
-      "my_printf/my_printf.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/my_printf/my_printf.c",
-    "output": "/home/curry/base_repo/lib/obj/my_printf/my_printf.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/numbers/my_isneg.o",
-      "numbers/my_isneg.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/numbers/my_isneg.c",
-    "output": "/home/curry/base_repo/lib/obj/numbers/my_isneg.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_strcmp.o",
-      "strings/my_strcmp.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strcmp.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strcmp.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/io/my_puterr.o",
-      "io/my_puterr.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/io/my_puterr.c",
-    "output": "/home/curry/base_repo/lib/obj/io/my_puterr.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_strcat.o",
-      "strings/my_strcat.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strcat.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strcat.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/my_printf/utilities.o",
-      "my_printf/utilities.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/my_printf/utilities.c",
-    "output": "/home/curry/base_repo/lib/obj/my_printf/utilities.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/split_string.o",
-      "strings/split_string.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/split_string.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/split_string.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_str_isprintable.o",
-      "strings/my_str_isprintable.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_str_isprintable.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_str_isprintable.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_strstr.o",
-      "strings/my_strstr.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strstr.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strstr.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/io/my_show_word_array.o",
-      "io/my_show_word_array.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/io/my_show_word_array.c",
-    "output": "/home/curry/base_repo/lib/obj/io/my_show_word_array.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/lists/add_to_top.o",
-      "lists/add_to_top.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/lists/add_to_top.c",
-    "output": "/home/curry/base_repo/lib/obj/lists/add_to_top.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/lists/append.o",
-      "lists/append.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/lists/append.c",
-    "output": "/home/curry/base_repo/lib/obj/lists/append.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/numbers/my_find_prime_sup.o",
-      "numbers/my_find_prime_sup.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/numbers/my_find_prime_sup.c",
-    "output": "/home/curry/base_repo/lib/obj/numbers/my_find_prime_sup.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/my_printf/printf_putstr.o",
-      "my_printf/printf_putstr.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/my_printf/printf_putstr.c",
-    "output": "/home/curry/base_repo/lib/obj/my_printf/printf_putstr.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_str_isnum.o",
-      "strings/my_str_isnum.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_str_isnum.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_str_isnum.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/lists/remove.o",
-      "lists/remove.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/lists/remove.c",
-    "output": "/home/curry/base_repo/lib/obj/lists/remove.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/lists/free_list.o",
-      "lists/free_list.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/lists/free_list.c",
-    "output": "/home/curry/base_repo/lib/obj/lists/free_list.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_strcapitalize.o",
-      "strings/my_strcapitalize.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strcapitalize.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strcapitalize.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/lists/sort.o",
-      "lists/sort.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/lists/sort.c",
-    "output": "/home/curry/base_repo/lib/obj/lists/sort.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_str_isupper.o",
-      "strings/my_str_isupper.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_str_isupper.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_str_isupper.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_strupcase.o",
-      "strings/my_strupcase.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strupcase.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strupcase.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_str_islower.o",
-      "strings/my_str_islower.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_str_islower.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_str_islower.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/lists/size.o",
-      "lists/size.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/lists/size.c",
-    "output": "/home/curry/base_repo/lib/obj/lists/size.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_free_word_array.o",
-      "strings/my_free_word_array.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_free_word_array.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_free_word_array.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_strarray_len.o",
-      "strings/my_strarray_len.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strarray_len.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strarray_len.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_strcpy.o",
-      "strings/my_strcpy.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strcpy.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strcpy.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/lists/find.o",
-      "lists/find.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/lists/find.c",
-    "output": "/home/curry/base_repo/lib/obj/lists/find.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/lists/create.o",
-      "lists/create.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/lists/create.c",
-    "output": "/home/curry/base_repo/lib/obj/lists/create.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/numbers/my_compute_power_rec.o",
-      "numbers/my_compute_power_rec.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/numbers/my_compute_power_rec.c",
-    "output": "/home/curry/base_repo/lib/obj/numbers/my_compute_power_rec.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/numbers/my_getnbr.o",
-      "numbers/my_getnbr.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/numbers/my_getnbr.c",
-    "output": "/home/curry/base_repo/lib/obj/numbers/my_getnbr.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/io/my_putstr.o",
-      "io/my_putstr.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/io/my_putstr.c",
-    "output": "/home/curry/base_repo/lib/obj/io/my_putstr.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_str_isalpha.o",
-      "strings/my_str_isalpha.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_str_isalpha.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_str_isalpha.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/strings/my_strdup.o",
-      "strings/my_strdup.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strdup.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strdup.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/numbers/my_compute_square_root.o",
-      "numbers/my_compute_square_root.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/numbers/my_compute_square_root.c",
-    "output": "/home/curry/base_repo/lib/obj/numbers/my_compute_square_root.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/gcc",
-      "-c",
-      "-I../include",
-      "-Wall",
-      "-Wextra",
-      "-o",
-      "obj/io/my_putnbr.o",
-      "io/my_putnbr.c"
-    ],
-    "directory": "/home/curry/base_repo/lib",
+    "directory": "/home/curry/base_repo",
     "file": "/home/curry/base_repo/lib/io/my_putnbr.c",
     "output": "/home/curry/base_repo/lib/obj/io/my_putnbr.o"
   },
@@ -603,29 +18,344 @@
     "arguments": [
       "/usr/bin/gcc",
       "-c",
-      "-I../include",
+      "-Iinclude",
       "-Wall",
       "-Wextra",
       "-o",
-      "obj/strings/my_strlowcase.o",
-      "strings/my_strlowcase.c"
+      "lib/obj/io/my_putstr.o",
+      "lib/io/my_putstr.c"
     ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strlowcase.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strlowcase.o"
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/io/my_putstr.c",
+    "output": "/home/curry/base_repo/lib/obj/io/my_putstr.o"
   },
   {
     "arguments": [
       "/usr/bin/gcc",
       "-c",
-      "-I../include",
+      "-Iinclude",
       "-Wall",
       "-Wextra",
       "-o",
-      "obj/strings/my_revstr.o",
-      "strings/my_revstr.c"
+      "lib/obj/io/my_puterr.o",
+      "lib/io/my_puterr.c"
     ],
-    "directory": "/home/curry/base_repo/lib",
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/io/my_puterr.c",
+    "output": "/home/curry/base_repo/lib/obj/io/my_puterr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/io/my_putchar.o",
+      "lib/io/my_putchar.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/io/my_putchar.c",
+    "output": "/home/curry/base_repo/lib/obj/io/my_putchar.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/io/my_show_word_array.o",
+      "lib/io/my_show_word_array.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/io/my_show_word_array.c",
+    "output": "/home/curry/base_repo/lib/obj/io/my_show_word_array.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/my_printf/utilities.o",
+      "lib/my_printf/utilities.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/my_printf/utilities.c",
+    "output": "/home/curry/base_repo/lib/obj/my_printf/utilities.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/my_printf/my_printf.o",
+      "lib/my_printf/my_printf.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/my_printf/my_printf.c",
+    "output": "/home/curry/base_repo/lib/obj/my_printf/my_printf.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/my_printf/printf_putnbr.o",
+      "lib/my_printf/printf_putnbr.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/my_printf/printf_putnbr.c",
+    "output": "/home/curry/base_repo/lib/obj/my_printf/printf_putnbr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/my_printf/printf_putstr.o",
+      "lib/my_printf/printf_putstr.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/my_printf/printf_putstr.c",
+    "output": "/home/curry/base_repo/lib/obj/my_printf/printf_putstr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/my_printf/printf_putchar.o",
+      "lib/my_printf/printf_putchar.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/my_printf/printf_putchar.c",
+    "output": "/home/curry/base_repo/lib/obj/my_printf/printf_putchar.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/numbers/my_isneg.o",
+      "lib/numbers/my_isneg.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/numbers/my_isneg.c",
+    "output": "/home/curry/base_repo/lib/obj/numbers/my_isneg.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/numbers/my_getnbr.o",
+      "lib/numbers/my_getnbr.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/numbers/my_getnbr.c",
+    "output": "/home/curry/base_repo/lib/obj/numbers/my_getnbr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/numbers/my_is_prime.o",
+      "lib/numbers/my_is_prime.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/numbers/my_is_prime.c",
+    "output": "/home/curry/base_repo/lib/obj/numbers/my_is_prime.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/numbers/my_find_prime_sup.o",
+      "lib/numbers/my_find_prime_sup.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/numbers/my_find_prime_sup.c",
+    "output": "/home/curry/base_repo/lib/obj/numbers/my_find_prime_sup.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/numbers/my_compute_power_rec.o",
+      "lib/numbers/my_compute_power_rec.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/numbers/my_compute_power_rec.c",
+    "output": "/home/curry/base_repo/lib/obj/numbers/my_compute_power_rec.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/numbers/my_compute_square_root.o",
+      "lib/numbers/my_compute_square_root.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/numbers/my_compute_square_root.c",
+    "output": "/home/curry/base_repo/lib/obj/numbers/my_compute_square_root.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_strcat.o",
+      "lib/strings/my_strcat.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strcat.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strcat.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_strcmp.o",
+      "lib/strings/my_strcmp.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strcmp.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strcmp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_strcpy.o",
+      "lib/strings/my_strcpy.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strcpy.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strcpy.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_strdup.o",
+      "lib/strings/my_strdup.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strdup.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strdup.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_strlen.o",
+      "lib/strings/my_strlen.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strlen.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strlen.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_strstr.o",
+      "lib/strings/my_strstr.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strstr.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strstr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_strchr.o",
+      "lib/strings/my_strchr.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strchr.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strchr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_revstr.o",
+      "lib/strings/my_revstr.c"
+    ],
+    "directory": "/home/curry/base_repo",
     "file": "/home/curry/base_repo/lib/strings/my_revstr.c",
     "output": "/home/curry/base_repo/lib/obj/strings/my_revstr.o"
   },
@@ -633,16 +363,286 @@
     "arguments": [
       "/usr/bin/gcc",
       "-c",
-      "-I../include",
+      "-Iinclude",
       "-Wall",
       "-Wextra",
       "-o",
-      "obj/strings/my_strlen.o",
-      "strings/my_strlen.c"
+      "lib/obj/strings/my_strupcase.o",
+      "lib/strings/my_strupcase.c"
     ],
-    "directory": "/home/curry/base_repo/lib",
-    "file": "/home/curry/base_repo/lib/strings/my_strlen.c",
-    "output": "/home/curry/base_repo/lib/obj/strings/my_strlen.o"
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strupcase.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strupcase.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/split_string.o",
+      "lib/strings/split_string.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/split_string.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/split_string.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_str_isnum.o",
+      "lib/strings/my_str_isnum.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_str_isnum.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_str_isnum.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_strlowcase.o",
+      "lib/strings/my_strlowcase.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strlowcase.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strlowcase.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_str_isupper.o",
+      "lib/strings/my_str_isupper.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_str_isupper.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_str_isupper.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_str_isalpha.o",
+      "lib/strings/my_str_isalpha.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_str_isalpha.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_str_isalpha.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_str_islower.o",
+      "lib/strings/my_str_islower.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_str_islower.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_str_islower.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_strarray_len.o",
+      "lib/strings/my_strarray_len.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strarray_len.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strarray_len.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_strcapitalize.o",
+      "lib/strings/my_strcapitalize.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_strcapitalize.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_strcapitalize.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_str_isprintable.o",
+      "lib/strings/my_str_isprintable.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_str_isprintable.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_str_isprintable.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/strings/my_free_word_array.o",
+      "lib/strings/my_free_word_array.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/strings/my_free_word_array.c",
+    "output": "/home/curry/base_repo/lib/obj/strings/my_free_word_array.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/lists/size.o",
+      "lib/lists/size.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/lists/size.c",
+    "output": "/home/curry/base_repo/lib/obj/lists/size.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/lists/sort.o",
+      "lib/lists/sort.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/lists/sort.c",
+    "output": "/home/curry/base_repo/lib/obj/lists/sort.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/lists/find.o",
+      "lib/lists/find.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/lists/find.c",
+    "output": "/home/curry/base_repo/lib/obj/lists/find.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/lists/append.o",
+      "lib/lists/append.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/lists/append.c",
+    "output": "/home/curry/base_repo/lib/obj/lists/append.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/lists/create.o",
+      "lib/lists/create.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/lists/create.c",
+    "output": "/home/curry/base_repo/lib/obj/lists/create.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/lists/remove.o",
+      "lib/lists/remove.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/lists/remove.c",
+    "output": "/home/curry/base_repo/lib/obj/lists/remove.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/lists/free_list.o",
+      "lib/lists/free_list.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/lists/free_list.c",
+    "output": "/home/curry/base_repo/lib/obj/lists/free_list.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "lib/obj/lists/add_to_top.o",
+      "lib/lists/add_to_top.c"
+    ],
+    "directory": "/home/curry/base_repo",
+    "file": "/home/curry/base_repo/lib/lists/add_to_top.c",
+    "output": "/home/curry/base_repo/lib/obj/lists/add_to_top.o"
   },
   {
     "arguments": [

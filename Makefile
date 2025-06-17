@@ -113,50 +113,52 @@ endef
 all: $(NAME)
 
 $(NAME): $(LIB) $(OBJ)
-	$(update_progress)
-	$(show_progress)
+#	$(update_progress)
+#	$(show_progress)
 	@printf "$(GREEN)$(BOLD)Linking C executable$(NC)"
 	@printf "$(YELLOW)$(BOLD)%s$(NC)\n" "$(NAME)"
 	@$(CC) -o $(NAME) $(OBJ) $(CFLAGS) $(LDFLAGS)
-	$(update_progress)
-	$(show_progress)
+#	$(update_progress)
+#	$(show_progress)
 	@printf "$(RED)$(BOLD)Built target$(NC)\n"
 
 # Build the library
 $(LIB): $(LIB_OBJ)
-	$(update_progress)
-	$(show_progress)
+#	$(update_progress)
+#	$(show_progress)
 	@$(AR) $(LIB) $(LIB_OBJ)
 	@printf "$(GREEN)$(BOLD)Linking C static library$(NC)"
 	@printf "$(YELLOW)$(BOLD)%s$(NC)\n" "$(LIB)"
 
 $(LIB_OBJ_DIR)/%.o: $(LIB_DIR)/%.c
 	@mkdir -p $(@D)
-	$(update_progress)
-	$(show_progress)
+#	$(update_progress)
+#	$(show_progress)
 	@printf "$(GREEN)Building C object$(NC)$(YELLOW)%s$(NC)\n" "$@"
 	@$(CC) -c $< -o $@ $(CFLAGS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(@D)
-	$(update_progress)
-	$(show_progress)
+#	$(update_progress)
+#	$(show_progress)
 	@printf "$(GREEN)Building C object$(NC)$(YELLOW)%s$(NC)\n" "$@"
 	@$(CC) -c $< -o $@ $(CFLAGS)
 
 clean: lib_clean
-	rm -rf $(OBJ_DIR)
+	@rm -rf $(OBJ_DIR)
 	@rm -f $(PROGRESS_FILE)
+	@printf "$(RED)$(BOLD)Cleaned object files$(NC)\n"
 
 lib_clean:
-	rm -rf $(LIB_OBJ_DIR)
+	@rm -rf $(LIB_OBJ_DIR)
 
 fclean: clean lib_fclean
-	rm -f $(NAME)
-	rm -f $(PROGRESS_FILE)
+	@rm -f $(NAME)
+	@rm -f $(PROGRESS_FILE)
+	@printf "$(RED)$(BOLD)Cleaned all files$(NC)\n"
 
 lib_fclean:
-	rm -f $(LIB)
+	@rm -f $(LIB)
 
 re: fclean all
 
