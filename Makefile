@@ -24,52 +24,9 @@ LIB_OBJ_DIR = $(LIB_DIR)/obj
 
 # Files
 LIB = $(LIB_DIR)/libmy.a
-SRC = $(SRC_DIR)/main.c
+SRC := $(shell find $(SRC_DIR) -type f -name "*.c")
 
-# Library sources and objects
-LIB_SRC =	$(LIB_DIR)/io/my_putnbr.c                   \
-            $(LIB_DIR)/io/my_putstr.c                   \
-            $(LIB_DIR)/io/my_puterr.c                   \
-            $(LIB_DIR)/io/my_putchar.c                  \
-            $(LIB_DIR)/io/my_show_word_array.c          \
-            $(LIB_DIR)/my_printf/utilities.c            \
-            $(LIB_DIR)/my_printf/my_printf.c            \
-            $(LIB_DIR)/my_printf/printf_putnbr.c        \
-            $(LIB_DIR)/my_printf/printf_putstr.c        \
-            $(LIB_DIR)/my_printf/printf_putchar.c       \
-            $(LIB_DIR)/numbers/my_isneg.c               \
-            $(LIB_DIR)/numbers/my_getnbr.c              \
-            $(LIB_DIR)/numbers/my_is_prime.c            \
-            $(LIB_DIR)/numbers/my_find_prime_sup.c      \
-            $(LIB_DIR)/numbers/my_compute_power_rec.c   \
-            $(LIB_DIR)/numbers/my_compute_square_root.c \
-            $(LIB_DIR)/strings/my_strcat.c              \
-            $(LIB_DIR)/strings/my_strcmp.c              \
-            $(LIB_DIR)/strings/my_strcpy.c              \
-            $(LIB_DIR)/strings/my_strdup.c              \
-            $(LIB_DIR)/strings/my_strlen.c              \
-            $(LIB_DIR)/strings/my_strstr.c              \
-            $(LIB_DIR)/strings/my_strchr.c              \
-            $(LIB_DIR)/strings/my_revstr.c              \
-            $(LIB_DIR)/strings/my_strupcase.c           \
-            $(LIB_DIR)/strings/split_string.c           \
-            $(LIB_DIR)/strings/my_str_isnum.c           \
-            $(LIB_DIR)/strings/my_strlowcase.c          \
-            $(LIB_DIR)/strings/my_str_isupper.c         \
-            $(LIB_DIR)/strings/my_str_isalpha.c         \
-            $(LIB_DIR)/strings/my_str_islower.c         \
-            $(LIB_DIR)/strings/my_strarray_len.c        \
-            $(LIB_DIR)/strings/my_strcapitalize.c       \
-            $(LIB_DIR)/strings/my_str_isprintable.c     \
-            $(LIB_DIR)/strings/my_free_word_array.c     \
-            $(LIB_DIR)/lists/size.c                     \
-            $(LIB_DIR)/lists/sort.c                     \
-            $(LIB_DIR)/lists/find.c                     \
-            $(LIB_DIR)/lists/append.c                   \
-            $(LIB_DIR)/lists/create.c                   \
-            $(LIB_DIR)/lists/remove.c                   \
-            $(LIB_DIR)/lists/free_list.c                \
-            $(LIB_DIR)/lists/add_to_top.c
+LIB_SRC := $(shell find $(LIB_DIR) -type f -name "*.c")
 
 LIB_OBJ = $(LIB_SRC:$(LIB_DIR)/%.c=$(LIB_OBJ_DIR)/%.o)
 
